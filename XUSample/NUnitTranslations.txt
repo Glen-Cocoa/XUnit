@@ -1,0 +1,28 @@
+Attributes
+=============================================
+[TestFixture] = Does not exist
+[Test] = [Fact]
+[Ignore] = [Fact(Skip())]
+[ExpectedException(typeof(InvalidOperationException))] = Assert.Throws<InvalidOperationException>(()=>{throw new InvalidOperationException();});
+[TestCase()] = [Theory][InlineData()]
+[SetUp]&[TearDown] = Constructor & IDisposable
+
+Asserts
+==============================================
+Assert.IsTrue = Assert.True
+Assert.IsFalse = Assert.False
+Assert.AreEqual = Assert.Equal
+Assert.AreNotEqual = Assert.NotEqual
+Assert.IsNull = Assert.Null
+Assert.IsNotNull = Assert.NotNull
+Assert.AreSame = Assert.Same
+Assert.AreNotSame = Assert.NotSame
+Assert.IsEmpty = Assert.Empty
+Assert.IsNotEmpty = Assert.NotEmpty
+Assert.Contains = Assert.Contains
+Assert.Fail = Assert.True(false, "Forced Failure");
+
+
+
+
+packages\xunit.runner.console.2.4.0\tools\net461\xunit.console XUSample\bin\Debug\XUSample.dll
